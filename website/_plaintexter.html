@@ -19,13 +19,11 @@
     header { margin: 38px 0 30px; }
     .icon { display: block; width: 112px; height: 112px; margin-left: -11px; }
     h1 { font-size: clamp(30px, 7vw, 40px); line-height: 1.2; margin: 12px 0 20px; letter-spacing: -.04em; }
-    h2 { font-size: 18px; margin: 32px 0 12px; }
     p { margin: 0 0 18px; }
     .download { display: inline-block; border: 2px solid #000; border-radius: 4px; padding: 11px 18px; font-weight: 700; text-decoration: none; }
     .download:hover { box-shadow: 3px 3px 0 #000; }
-    .details, footer, nav { font-size: 13px; }
-    .details { margin-top: 13px; }
-    ol { padding-left: 1.7em; }
+    footer, nav { font-size: 13px; }
+    ul { padding-left: 1.7em; }
     li { padding-left: .3em; margin-bottom: 10px; }
     code { font: inherit; font-weight: 700; }
     footer { border-top: 1px solid #000; margin-top: 34px; padding-top: 18px; }
@@ -38,20 +36,17 @@
   <header>
     <img class="icon" src="/_plaintexter-icon.png" alt="Plaintexter app icon: lowercase pt" width="112" height="112">
     <h1>Plaintexter</h1>
-    <p>Plain text, Markdown, and OCR. One small button in your Mac’s menu bar.</p>
     <a class="download" href="/files/plaintexter/Plaintexter-1.4.0.dmg" download>Download for Mac ↓</a>
-    <p class="details">Free · Version 1.4.0 · macOS 13 or later<br>Apple silicon and Intel · Signed and notarized</p>
   </header>
-  <section aria-labelledby="how">
-    <h2 id="how">How it works</h2>
-    <ol>
+  <section aria-label="Instructions">
+    <ul>
       <li>Open the download, drag Plaintexter to Applications, and launch it.</li>
-      <li>Copy something. Click <code>pt</code> in the menu bar, then paste.</li>
+      <li>Copy something. Click <code>pt</code> in the menu bar, and your clipboard contents will be converted to plain text.</li>
       <li>Right-click <code>pt</code> to choose Plain Text or Markdown, undo a conversion, or enable Open at Launch (start at login).</li>
-    </ol>
+    </ul>
     <p>Plain Text removes styling. Markdown keeps supported formatting from rich text, including bold, italics, links, and lists.</p>
     <p>Images and scanned PDF pages are read with Apple’s on-device OCR. OCR extracts text, not its styling. If an image has no substantial readable text, the result is “No text found to OCR.”</p>
-    <p>Clipboard content stays on your Mac. Web images may be downloaded for local OCR. No account or subscription.</p>
+    <p>Clipboard content stays on your Mac.</p>
   </section>
   <footer>By <a href="/">John Bergmayer</a> · <a href="https://github.com/bergmayer/plaintexter">Source on GitHub</a></footer>
 </main>
