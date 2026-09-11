@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Plaintexter — clipboard text for Mac</title>
+  <meta name="description" content="A free Mac menu bar app that converts the clipboard to plain text or Markdown and reads text in images and PDFs.">
+  <link rel="canonical" href="https://bergmayer.net/plaintexter">
+  <link rel="icon" href="/_plaintexter-icon.png" type="image/png">
+  <style>
+    * { box-sizing: border-box; }
+    html { color-scheme: light; background: #fff; color: #000; }
+    body { margin: 0; font: 16px/1.65 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+    main { max-width: 700px; margin: 0 auto; padding: 52px 24px 40px; }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid #000; outline-offset: 5px; }
+    header { margin: 38px 0 30px; }
+    .icon { display: block; width: 112px; height: 112px; margin-left: -11px; }
+    h1 { font-size: clamp(30px, 7vw, 40px); line-height: 1.2; margin: 12px 0 20px; letter-spacing: -.04em; }
+    h2 { font-size: 18px; margin: 32px 0 12px; }
+    p { margin: 0 0 18px; }
+    .download { display: inline-block; border: 2px solid #000; border-radius: 4px; padding: 11px 18px; font-weight: 700; text-decoration: none; }
+    .download:hover { box-shadow: 3px 3px 0 #000; }
+    .details, footer, nav { font-size: 13px; }
+    .details { margin-top: 13px; }
+    ol { padding-left: 1.7em; }
+    li { padding-left: .3em; margin-bottom: 10px; }
+    code { font: inherit; font-weight: 700; }
+    footer { border-top: 1px solid #000; margin-top: 34px; padding-top: 18px; }
+    @media (max-width: 480px) { main { padding-top: 26px; } header { margin-top: 26px; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="/software">← Software</a></nav>
+  <header>
+    <img class="icon" src="/_plaintexter-icon.png" alt="Plaintexter app icon: lowercase pt" width="112" height="112">
+    <h1>Plaintexter</h1>
+    <p>Plain text, Markdown, and OCR. One small button in your Mac’s menu bar.</p>
+    <a class="download" href="/files/plaintexter/Plaintexter-1.4.0.dmg" download>Download for Mac ↓</a>
+    <p class="details">Free · Version 1.4.0 · macOS 13 or later<br>Apple silicon and Intel · Signed and notarized</p>
+  </header>
+  <section aria-labelledby="how">
+    <h2 id="how">How it works</h2>
+    <ol>
+      <li>Open the download, drag Plaintexter to Applications, and launch it.</li>
+      <li>Copy something. Click <code>pt</code> in the menu bar, then paste.</li>
+      <li>Right-click <code>pt</code> to choose Plain Text or Markdown, undo a conversion, or enable Open at Launch (start at login).</li>
+    </ol>
+    <p>Plain Text removes styling. Markdown keeps supported formatting from rich text, including bold, italics, links, and lists.</p>
+    <p>Images and scanned PDF pages are read with Apple’s on-device OCR. OCR extracts text, not its styling. If an image has no substantial readable text, the result is “No text found to OCR.”</p>
+    <p>Clipboard content stays on your Mac. Web images may be downloaded for local OCR. No account or subscription.</p>
+  </section>
+  <footer>By <a href="/">John Bergmayer</a> · <a href="https://github.com/bergmayer/plaintexter">Source on GitHub</a></footer>
+</main>
+</body>
+</html>
