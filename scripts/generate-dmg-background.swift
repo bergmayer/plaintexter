@@ -12,10 +12,10 @@ for scale in [1, 2] {
     context.scaleBy(x: CGFloat(scale), y: CGFloat(scale))
     NSColor.white.setFill()
     NSRect(x: 0, y: 0, width: 640, height: 360).fill()
-    func centered(_ text: String, y: CGFloat, size: CGFloat, weight: NSFont.Weight) {
+    func centered(_ text: String, y: CGFloat, size: CGFloat, weight: NSFont.Weight, height: CGFloat = 40) {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = .center
-        (text as NSString).draw(in: NSRect(x: 24, y: y, width: 592, height: 40), withAttributes: [
+        (text as NSString).draw(in: NSRect(x: 24, y: y, width: 592, height: height), withAttributes: [
             .font: NSFont.monospacedSystemFont(ofSize: size, weight: weight),
             .foregroundColor: NSColor.black, .paragraphStyle: paragraph
         ])
@@ -32,7 +32,8 @@ for scale in [1, 2] {
     arrow.lineJoinStyle = .round
     NSColor.black.setStroke()
     arrow.stroke()
-    centered("Then open Plaintexter and click pt in the menu bar.", y: 28, size: 14, weight: .regular)
+    centered("Open Plaintexter, then click pt in the menu bar\nto convert clipboard contents to plain text.\nControl-click pt for options.",
+             y: 10, size: 14, weight: .regular, height: 64)
     NSGraphicsContext.restoreGraphicsState()
     let suffix = scale == 2 ? "@2x" : ""
     try bitmap.representation(using: .png, properties: [:])!.write(to: directory.appendingPathComponent("background\(suffix).png"))
