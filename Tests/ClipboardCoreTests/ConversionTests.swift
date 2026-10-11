@@ -141,6 +141,7 @@ struct ConversionTests {
     }
 
     @Test func unsupportedItemLeavesEntireClipboardIntact() async throws {
+        #expect(ConversionError.unsupported.localizedDescription == "Can't find text")
         let known = NSPasteboardItem()
         known.setString("keep", forType: .string)
         let unknown = NSPasteboardItem()

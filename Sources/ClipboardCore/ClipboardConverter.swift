@@ -7,7 +7,7 @@ public enum ConversionError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .empty: "The clipboard is empty or clipboard access was denied."
-        case .unsupported: "This clipboard content cannot be converted to text. It has been left unchanged."
+        case .unsupported: "Can't find text"
         case .changed: "The clipboard changed during conversion. Try again."
         case .writeFailed: "The converted text could not be written to the clipboard."
         case .nothingToUndo: "There is no conversion to undo for the current clipboard."
